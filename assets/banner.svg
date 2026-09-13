@@ -24,12 +24,13 @@
     <rect x="0.5" y="0.5" width="1199" height="419" rx="28" fill="none" stroke="#3A1A2E"/>
 
     <!-- editorial left column -->
-    <text x="84" y="128" font-family="Georgia, 'Times New Roman', 'DejaVu Serif', serif" font-style="italic" font-size="26" fill="#FF8FBA">hello, I'm</text>
-    <text x="80" y="222" font-family="Georgia, 'Times New Roman', 'DejaVu Serif', serif" font-size="96" font-weight="400" letter-spacing="-2" fill="url(#rose)">Diya Joshi</text>
-    <text x="86" y="266" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" letter-spacing="4" fill="#FFB3D1">INSTRUMENTATION &amp; CONTROL · FIRMWARE · DATA · PRODUCT</text>
-    <rect x="86" y="291" width="360" height="1.5" fill="url(#rule)"/>
-    <text x="86" y="330" font-family="Georgia, 'Times New Roman', 'DejaVu Serif', serif" font-style="italic" font-size="19" fill="#FFD6E7" fill-opacity="0.85">I make sense of signals, on silicon, in spreadsheets,</text>
-    <text x="86" y="356" font-family="Georgia, 'Times New Roman', 'DejaVu Serif', serif" font-style="italic" font-size="19" fill="#FFD6E7" fill-opacity="0.85">and occasionally on stage.</text>
+    <text x="84" y="124" font-family="Georgia, 'Times New Roman', 'DejaVu Serif', serif" font-style="italic" font-size="26" fill="#FF8FBA">Hello, I'm</text>
+    <text x="80" y="216" font-family="Georgia, 'Times New Roman', 'DejaVu Serif', serif" font-size="96" font-weight="400" letter-spacing="-2" fill="url(#rose)">Diya Joshi</text>
+    <text x="86" y="258" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" letter-spacing="4" fill="#FFB3D1">ANALYTICS · EMBEDDED SYSTEMS · APPLIED AI · PRODUCT</text>
+    <rect x="86" y="282" width="360" height="1.5" fill="url(#rule)"/>
+    <text x="86" y="316" font-family="Georgia, 'Times New Roman', 'DejaVu Serif', serif" font-style="italic" font-size="18" fill="#FFD6E7" fill-opacity="0.88">Where numbers speak, I listen;</text>
+    <text x="86" y="342" font-family="Georgia, 'Times New Roman', 'DejaVu Serif', serif" font-style="italic" font-size="18" fill="#FFD6E7" fill-opacity="0.88">where silicon lies still, I make it move;</text>
+    <text x="86" y="368" font-family="Georgia, 'Times New Roman', 'DejaVu Serif', serif" font-style="italic" font-size="18" fill="#FFD6E7" fill-opacity="0.88">where ideas seem strange, I wonder what they might become.</text>
 
     <!-- oscilloscope grid -->
     <g stroke="#FF8FBA" stroke-opacity="0.10">
