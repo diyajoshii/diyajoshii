@@ -1,138 +1,106 @@
 <div align="center">
-  <img src="./assets/header.svg" width="100%" alt="Diya Joshi — Data analysis, embedded systems, applied AI, product" />
-</div>
-
-<div align="center">
-  <a href="https://diyajoshi.vercel.app/"><img src="https://img.shields.io/badge/portfolio-0d1117?style=for-the-badge&logo=vercel&logoColor=d2a8ff" alt="Portfolio" /></a>
-  <a href="https://www.linkedin.com/in/diya-joshi19"><img src="https://img.shields.io/badge/linkedin-0d1117?style=for-the-badge&logo=linkedin&logoColor=0a66c2" alt="LinkedIn" /></a>
-  <a href="https://crates.io/crates/mpu6050-nostd"><img src="https://img.shields.io/badge/crates.io-0d1117?style=for-the-badge&logo=rust&logoColor=79c0ff" alt="mpu6050-nostd on crates.io" /></a>
-  <a href="mailto:diyajoshi1909@gmail.com"><img src="https://img.shields.io/badge/say_hi-0d1117?style=for-the-badge&logo=gmail&logoColor=f85149" alt="Email Diya" /></a>
+  <img src="./assets/banner.svg" width="100%" alt="Diya Joshi — instrumentation and control, firmware, data, product" />
+  <br /><br />
+  <a href="https://diyajoshi.vercel.app/"><img src="./assets/link-portfolio.svg" height="38" alt="Portfolio" /></a>&nbsp;
+  <a href="https://www.linkedin.com/in/diya-joshi19"><img src="./assets/link-linkedin.svg" height="38" alt="LinkedIn" /></a>&nbsp;
+  <a href="https://crates.io/crates/mpu6050-nostd"><img src="./assets/link-crates.svg" height="38" alt="mpu6050-nostd on crates.io" /></a>&nbsp;
+  <a href="mailto:diyajoshi1909@gmail.com"><img src="./assets/link-email.svg" height="38" alt="Email Diya" /></a>
 </div>
 
 <br />
 
-I like working at the point where a signal turns into a decision. Sometimes the signal is an I²C register on a gyroscope, sometimes it is seventeen CSVs of collections data with a headline that doesn't survive a p-value. The job is the same: **measure first, build the thing, then show the numbers that prove it works** (or the ones that prove it doesn't).
+<p align="center">
+  Instrumentation &amp; Control engineer at <b>NSUT</b>, class of 2027. This summer I rewrote an Ethernet firmware module from C to Rust at <b>Texas Instruments</b>; the year before, I ran product at a fitness startup and watched onboarding climb from 5% to 45%. The common thread is a habit of measuring things properly before deciding anything.
+</p>
 
-> Currently a student at **Netaji Subhas University of Technology (NSUT)**, Delhi.
+<p align="center">$\color{#FF8FBA}{\textit{measure twice, ship once}}$</p>
 
-```text
-building_with   → Python · Rust · SQL · embedded-hal · scikit-learn · FastAPI · Next.js
-thinking_about  → forensic data analysis · no_std drivers you can test on a laptop · agents that spend a budget
-operating_from  → Delhi, India (UTC+5:30)
-```
+<br />
 
-## `> shipped_work`
+<img src="./assets/h-work.svg" height="64" alt="01 · selected work" />
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>⚡ Prahar</h3>
-      <p>An agent that decides whether, when, and how to retry a failed recurring debit in India, spending a hard-capped NPCI attempt budget against a learned model of when the payer will actually have money. Built for the Razorpay AI Buildathon. The headline metric failed, and the README says so, with 95% CIs over five seeds.</p>
-      <p><code>Python</code> <code>hazard models</code> <code>simulation</code> <code>ablations</code></p>
-      <a href="https://github.com/diyajoshii/Prahar-RazorpayAIbuildathon"><b>source ↗</b></a>
+      <sub>firmware</sub>
+      <h3>mpu6050-nostd</h3>
+      <p>A register-level <code>no_std</code> driver for the MPU-6050, written from the datasheet, with a fault-injecting mock I²C bus so the entire driver, FIFO included, runs under <code>cargo test</code> on a laptop. Published to crates.io, with an on-target demo for the TM4C123G.</p>
+      <p><kbd>Rust</kbd> <kbd>no_std</kbd> <kbd>embedded-hal</kbd> <kbd>I²C</kbd></p>
+      <a href="https://github.com/diyajoshii/Rust">source</a> · <a href="https://crates.io/crates/mpu6050-nostd">crates.io</a> · <a href="https://docs.rs/mpu6050-nostd">docs</a>
     </td>
     <td width="50%" valign="top">
-      <h3>🦀 mpu6050-nostd</h3>
-      <p>A register-level <code>no_std</code> Rust driver for the MPU-6050 accelerometer/gyroscope, generic over <code>embedded-hal</code> 1.0, with a fault-injecting mock I²C bus so the whole driver, FIFO and bus failures included, runs under <code>cargo test</code> with no hardware attached. 76 tests, CI-written coverage badge, 10.6 KB of flash on a TM4C123G.</p>
-      <p><code>Rust</code> <code>no_std</code> <code>embedded-hal</code> <code>I²C</code></p>
-      <a href="https://github.com/diyajoshii/Rust"><b>source ↗</b></a> · <a href="https://crates.io/crates/mpu6050-nostd"><b>crates.io ↗</b></a> · <a href="https://docs.rs/mpu6050-nostd"><b>docs ↗</b></a>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🔍 CredResolve analysis</h3>
-      <p>A forensic take-down of the claim "recovery improved 11% month-on-month". It hadn't: net recovery was flat, the 11% was a 31-day March next to a 28-day February, and reported figures were overstated by ₹12 Cr through duplicates and reversals. Reproducible pipeline, production-shaped SQL, golden dataset, DiD counterfactual, one-screen CEO dashboard.</p>
-      <p><code>Python</code> <code>SQL</code> <code>pandas</code> <code>statistics</code></p>
-      <a href="https://github.com/diyajoshii/CredResolve-analysis"><b>source ↗</b></a>
-    </td>
-    <td width="50%" valign="top">
-      <h3>🔮 AURA</h3>
-      <p>A research-paper companion for people learning machine learning. Ask a question in plain language, follow up naturally, and inspect the exact passages retrieved before the answer was written. Curated LaTeX-source library, section-aware chunks with provenance, streamed answers.</p>
-      <p><code>Next.js</code> <code>Qdrant</code> <code>Gemini</code> <code>RAG</code></p>
-      <a href="https://github.com/diyajoshii/AURA-AI-Research-Assistant"><b>source ↗</b></a>
+      <sub>decision systems</sub>
+      <h3>Prahar</h3>
+      <p>An agent that decides whether, when, and how to retry a failed recurring debit in India, under a hard cap on NPCI attempts and a model of when the payer will actually have money. Built for the Razorpay AI Buildathon. The write-up reports the metric that failed next to the ones that didn't.</p>
+      <p><kbd>Python</kbd> <kbd>hazard models</kbd> <kbd>simulation</kbd> <kbd>ablations</kbd></p>
+      <a href="https://github.com/diyajoshii/Prahar-RazorpayAIbuildathon">source</a>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>📈 Prodessy</h3>
-      <p>Project risk and completion forecasting for product managers: a ranked queue of at-risk tasks, predicted completion timelines, and SHAP explanations for why a task was flagged. Built for a case competition at IIM Indore.</p>
-      <p><code>LightGBM</code> <code>AutoGluon</code> <code>SHAP</code> <code>NLP</code></p>
-      <a href="https://github.com/diyajoshii/Prodessy-IIMIndore"><b>source ↗</b></a>
+      <sub>data forensics</sub>
+      <h3>CredResolve</h3>
+      <p>An audit of the claim that collections recovery grew 11% month on month. It hadn't. Most of the 11% was a 31-day March sitting next to a 28-day February, and the rest was duplicates and reversals counted as cash. Reproducible pipeline, production-shaped SQL, one-screen dashboard.</p>
+      <p><kbd>Python</kbd> <kbd>SQL</kbd> <kbd>pandas</kbd> <kbd>statistics</kbd></p>
+      <a href="https://github.com/diyajoshii/CredResolve-analysis">source</a>
     </td>
     <td width="50%" valign="top">
-      <h3>🛡️ Aegis</h3>
-      <p>A campus utility platform for NSUT students: scholarship discovery, lost-and-found matching, proctored skill assessments with face detection and tab-switch tracking, and syllabus-based academic help, in one place.</p>
-      <p><code>TypeScript</code> <code>Node</code> <code>face-api.js</code></p>
-      <a href="https://github.com/diyajoshii/Aegis-NSUT-Campus-Utility-Platform"><b>source ↗</b></a>
+      <sub>applied ai</sub>
+      <h3>AURA</h3>
+      <p>A chat workspace over a curated library of machine-learning papers. Ask in plain language, follow up naturally, and open the exact passages that were retrieved before the answer was written. Section-aware chunks, provenance on every citation, streamed replies.</p>
+      <p><kbd>Next.js</kbd> <kbd>Qdrant</kbd> <kbd>Gemini</kbd> <kbd>RAG</kbd></p>
+      <a href="https://github.com/diyajoshii/AURA-AI-Research-Assistant">source</a>
     </td>
   </tr>
 </table>
 
-## `> tools_i_reach_for`
-
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=python,rust,c,sklearn,pytorch,fastapi,nextjs,ts,postgres,docker,linux,git&theme=dark&perline=12" alt="Python, Rust, C, scikit-learn, PyTorch, FastAPI, Next.js, TypeScript, PostgreSQL, Docker, Linux, and Git" />
-</div>
+<p align="center"><sub>Also on the shelf: <a href="https://github.com/diyajoshii/Aegis-NSUT-Campus-Utility-Platform">Aegis</a>, a campus platform I led product for, shipped as an MVP in 36 hours · <a href="https://github.com/diyajoshii/Prodessy-IIMIndore">Prodessy</a>, an IIM Indore case-competition prototype · and, off GitHub, a non-invasive glucose estimator from PPG signals at R² 0.989.</sub></p>
 
 <br />
 
-## `> how_the_pieces_fit`
+<img src="./assets/h-toolkit.svg" height="64" alt="02 · what I build with" />
 
-```mermaid
-flowchart TB
-    subgraph SENSE["01 · SENSE"]
-        direction LR
-        A1["Sensors<br/>I²C · SPI · FIFO"]
-        A2["Transactions<br/>ledgers · mandates"]
-        A3["Documents<br/>papers · specs"]
-        A4["Product events<br/>tasks · updates"]
-    end
+<table>
+  <tr>
+    <td align="right" valign="top"><sub><b>firmware</b></sub></td>
+    <td><kbd>Rust</kbd> <kbd>C / C++</kbd> <kbd>embedded-hal</kbd> <kbd>I²C · SPI</kbd> <kbd>cargo test</kbd> <kbd>Linux</kbd></td>
+  </tr>
+  <tr>
+    <td align="right" valign="top"><sub><b>data</b></sub></td>
+    <td><kbd>Python</kbd> <kbd>SQL</kbd> <kbd>pandas</kbd> <kbd>NumPy</kbd> <kbd>LightGBM</kbd> <kbd>Power BI</kbd> <kbd>Tableau</kbd></td>
+  </tr>
+  <tr>
+    <td align="right" valign="top"><sub><b>ai</b></sub></td>
+    <td><kbd>RAG</kbd> <kbd>Qdrant</kbd> <kbd>LLM APIs</kbd> <kbd>NLP</kbd> <kbd>feature engineering</kbd></td>
+  </tr>
+  <tr>
+    <td align="right" valign="top"><sub><b>product</b></sub></td>
+    <td><kbd>Notion</kbd> <kbd>Miro</kbd> <kbd>Jira</kbd> <kbd>Confluence</kbd> <kbd>roadmaps</kbd> <kbd>GTM decks</kbd></td>
+  </tr>
+</table>
 
-    subgraph TRUST["02 · TRUST THE DATA"]
-        direction LR
-        B1["PROFILE<br/>grain · keys · ranges"] --> B2["FORENSICS<br/>duplicates · reversals · calendar"]
-        B2 --> B3["TRANSFORM<br/>SQL · Python"]
-        B3 --> B4["GOLDEN SET<br/>one definition per metric"]
-    end
+<br />
 
-    subgraph REASON["03 · REASON"]
-        direction LR
-        C1["FEATURES<br/>no leakage · as-of joins"] --> C2["MODEL<br/>ML · hazard · retrieval"]
-        C2 --> C3["DECIDE<br/>budget · policy · rules"]
-        C3 --> C4["EVALUATE<br/>seeds · CIs · ablations · CI"]
-    end
+<img src="./assets/h-journey.svg" height="64" alt="03 · the route so far" />
 
-    subgraph SHIP["04 · SHIP"]
-        direction LR
-        D1["SERVE<br/>API · crate · dashboard"] --> D2["ACT<br/>retry · alert · answer"]
-        D2 --> D3["OBSERVE<br/>flash size · latency · ₹ harm"]
-        D3 --> D4["REVISE<br/>publish what failed too"]
-    end
+<img src="./assets/journey.svg" width="100%" alt="2023 NSUT · 2025 Texas Instruments WiSH mentee · 2025 to 2026 Fitness With Manvi · 2026 Texas Instruments embedded software intern · 2026 Mudrakala co-founder and president" />
 
-    A1 --> B1
-    A2 --> B1
-    A3 --> B1
-    A4 --> B1
-    B4 --> C1
-    C4 --> D1
-    D4 -. "measure again" .-> B1
+<br />
 
-    classDef sense fill:#161b22,stroke:#79c0ff,color:#c9d1d9,stroke-width:1px;
-    classDef trust fill:#0d1117,stroke:#d2a8ff,color:#c9d1d9,stroke-width:2px;
-    classDef reason fill:#0d1117,stroke:#7ee787,color:#c9d1d9,stroke-width:2px;
-    classDef ship fill:#0d1117,stroke:#ffa657,color:#c9d1d9,stroke-width:2px;
-    class A1,A2,A3,A4 sense;
-    class B1,B2,B3,B4 trust;
-    class C1,C2,C3,C4 reason;
-    class D1,D2,D3,D4 ship;
-```
+<img src="./assets/h-pulse.svg" height="64" alt="04 · still measuring" />
 
-## `> contribution_arcade`
+<img src="./assets/pulse.svg" width="100%" alt="An animated pink pulse waveform" />
 
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/diyajoshii/diyajoshii/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/diyajoshii/diyajoshii/output/github-contribution-grid-snake.svg" />
-    <img alt="Animated snake eating Diya's GitHub contributions" src="https://raw.githubusercontent.com/diyajoshii/diyajoshii/output/github-contribution-grid-snake.svg" />
-  </picture>
-</div>
+<details>
+  <summary><sub>off the clock</sub></summary>
+  <br />
+  <ul>
+    <li>Co-founded and lead <b>Mudrakala</b>, NSUT's Indian performing-arts society. Fifty partner colleges, five hundred people at the first fest.</li>
+    <li>International rank 46 at the International Mathematics Olympiad, back when the signals were on paper.</li>
+    <li>One of ten students from Uttarakhand picked for ISRO's Young Scientists Programme.</li>
+  </ul>
+</details>
+
+<br />
+
+<p align="center"><sub>Delhi · UTC+5:30 · <a href="mailto:diyajoshi1909@gmail.com">diyajoshi1909@gmail.com</a></sub></p>

@@ -1,0 +1,49 @@
+<svg width="1200" height="420" viewBox="0 0 1200 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t d">
+  <title id="t">Diya Joshi</title>
+  <desc id="d">Editorial banner in shades of pink with a pulse waveform.</desc>
+  
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14090F"/><stop offset="0.5" stop-color="#1F0D19"/><stop offset="1" stop-color="#120610"/>
+    </linearGradient>
+    <linearGradient id="rose" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFD6E7"/><stop offset="1" stop-color="#FF6AA6"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FF6AA6"/><stop offset="1" stop-color="#FF6AA6" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow"><stop offset="0" stop-color="#F0468C" stop-opacity="0.28"/><stop offset="1" stop-color="#F0468C" stop-opacity="0"/></radialGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#FF8FBA" fill-opacity="0.13"/></pattern>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <clipPath id="clip"><rect width="1200" height="420" rx="28"/></clipPath>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect width="1200" height="420" fill="url(#bg)"/>
+    <rect width="1200" height="420" fill="url(#dots)"/>
+    <ellipse cx="900" cy="240" rx="380" ry="260" fill="url(#glow)"/>
+    <rect x="0.5" y="0.5" width="1199" height="419" rx="28" fill="none" stroke="#3A1A2E"/>
+
+    <!-- editorial left column -->
+    <text x="84" y="128" font-family="Georgia, 'Times New Roman', 'DejaVu Serif', serif" font-style="italic" font-size="26" fill="#FF8FBA">hello, I'm</text>
+    <text x="80" y="222" font-family="Georgia, 'Times New Roman', 'DejaVu Serif', serif" font-size="96" font-weight="400" letter-spacing="-2" fill="url(#rose)">Diya Joshi</text>
+    <text x="86" y="266" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" letter-spacing="4" fill="#FFB3D1">INSTRUMENTATION &amp; CONTROL · FIRMWARE · DATA · PRODUCT</text>
+    <rect x="86" y="291" width="360" height="1.5" fill="url(#rule)"/>
+    <text x="86" y="330" font-family="Georgia, 'Times New Roman', 'DejaVu Serif', serif" font-style="italic" font-size="19" fill="#FFD6E7" fill-opacity="0.85">I make sense of signals, on silicon, in spreadsheets,</text>
+    <text x="86" y="356" font-family="Georgia, 'Times New Roman', 'DejaVu Serif', serif" font-style="italic" font-size="19" fill="#FFD6E7" fill-opacity="0.85">and occasionally on stage.</text>
+
+    <!-- oscilloscope grid -->
+    <g stroke="#FF8FBA" stroke-opacity="0.10">
+      <path d="M700 120 V380 M780 120 V380 M860 120 V380 M940 120 V380 M1020 120 V380 M1100 120 V380"/>
+      <path d="M690 160 H1150 M690 250 H1150 M690 340 H1150" stroke-dasharray="2 6"/>
+    </g>
+    <text x="1150" y="112" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="1" fill="#FF8FBA" fill-opacity="0.8">PPG · 100 Hz · ch 01</text>
+
+    <!-- pulse -->
+    <path d="M700 250 C720 250 730 243.5 742 178.5 C752 120 758 120 766 156.4 C778 204.5 786 211.0 796 195.4 C806 182.39999999999998 812 192.8 822 216.2 C850 243.5 890 250 940 250 C960 250 970 243.5 982 178.5 C992 120 998 120 1006 156.4 C1018 204.5 1026 211.0 1036 195.4 C1046 182.39999999999998 1052 192.8 1062 216.2 C1090 243.5 1130 250 1180 250" fill="none" stroke="#F0468C" stroke-opacity="0.25" stroke-width="8" stroke-linecap="round" filter="url(#soft)"/>
+    <path id="pulse" d="M700 250 C720 250 730 243.5 742 178.5 C752 120 758 120 766 156.4 C778 204.5 786 211.0 796 195.4 C806 182.39999999999998 812 192.8 822 216.2 C850 243.5 890 250 940 250 C960 250 970 243.5 982 178.5 C992 120 998 120 1006 156.4 C1018 204.5 1026 211.0 1036 195.4 C1046 182.39999999999998 1052 192.8 1062 216.2 C1090 243.5 1130 250 1180 250" fill="none" stroke="url(#rose)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle r="5" fill="#FFF0F6" filter="url(#soft)">
+      <animateMotion dur="4s" repeatCount="indefinite" rotate="0"><mpath href="#pulse"/></animateMotion>
+    </circle>
+    <path d="M1128 345 Q1128 352 1135 352 Q1128 352 1128 359 Q1128 352 1121 352 Q1128 352 1128 345Z" fill="#FF8FBA"/>
+  </g>
+</svg>
