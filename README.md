@@ -98,7 +98,7 @@
 
 <img src="./assets/h-journey.svg" height="64" alt="03 · The route so far" />
 
-<img src="./assets/journey.svg" width="100%" alt="2023 NSUT · 2024 Spill.app · 2025 Texas Instruments WiSH mentee · 2025 to 2026 Fitness With Manvi · 2026 Texas Instruments embedded software intern" />
+<img src="./assets/journey.svg" width="100%" alt="2023 NSUT · 2024 Spill.app growth and tech intern · 2025 Texas Instruments WiSH mentee · 2025 to 2026 Fitness With Manvi · 2026 Texas Instruments embedded software intern" />
 
 <br />
 
